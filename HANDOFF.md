@@ -25,6 +25,7 @@
 ```
 /합본자동화/
 ├── PROJECT.md
+├── HANDOFF.md
 ├── functions/
 │   ├── classification_guide.md
 │   ├── column_inference.md
@@ -45,18 +46,20 @@
 
 - [x] 프로젝트 아키텍처 확정
 - [x] 타입 7종 도출 및 확정
-- [x] PROJECT.md 작성
-- [x] functions/classification_guide.md 작성
+- [x] PROJECT.md 작성 (Gemini 2.5 Flash, 비용 추정 포함)
+- [x] functions/classification_guide.md 작성 (헤더 탐색 규칙 + 분류 우선순위 포함)
 - [x] functions/column_inference.md 작성
-- [x] functions/type_management.md 작성 (골격만, 추후 보완)
+- [x] functions/type_management.md 작성 (골격)
 - [x] output/template_spec.md 작성
-- [ ] types/Type_메인.md 작성
-- [ ] types/Type_PV.md 작성
-- [ ] types/Type_전투.md 작성
-- [ ] types/Type_캐릭터음성.md 작성
-- [ ] types/Type_짧은음성.md 작성
-- [ ] types/Type_무한대.md 작성 (샘플 합본 검토 후 진행)
-- [ ] types/Type_명방캐릭터.md 작성
+- [x] types/Type_메인.md 작성
+- [x] types/Type_PV.md 작성
+- [x] types/Type_전투.md 작성
+- [x] types/Type_캐릭터음성.md 작성
+- [x] types/Type_짧은음성.md 작성
+- [x] types/Type_명방캐릭터.md 작성
+- [x] types/Type_무한대.md 작성 (초안 — 샘플 합본 검토 후 보완 필요)
+- [x] 타입 분류 시뮬레이션 100% 통과 (34/34 시트)
+- [ ] Type_무한대.md 최종 보완 (샘플 합본 검토 후)
 - [ ] Python 코드 작성
 - [ ] 실제 파일로 테스트
 - [ ] PyInstaller .exe 패키징
@@ -74,12 +77,12 @@
 | 로렌츠_버터플라이_3_5洛伦兹蝴蝶角色语音_251230.xlsx | Type_캐릭터음성 |
 | 로렌츠_버터플라이_3_5洛伦兹蝴蝶角色PV_251230.xlsx | Type_PV |
 | 로렌츠_버터플라이_스킬_3_5洛伦兹蝴蝶技能PV_250120.xlsx | Type_PV |
-| 로렌츠_버터플라이_3_5洛伦兹蝴蝶角色故事_260309.xlsx | Type_메인 + Type_짧은음성 혼재 |
+| 로렌츠_버터플라이_3_5洛伦兹蝴蝶角色故事_260309.xlsx | Type_메인(终稿) + Type_짧은음성(짧은 음성) |
 
 ### 프로젝트AP
 | 파일명 | 타입 |
 |--------|------|
-| 챕터1_파트3_v1_01.xlsx | Type_메인 (파트3, 파트3_하우징 부분 시트) / 나머지 스킵 |
+| 챕터1_파트3_v1_01.xlsx | Type_메인 (파트3, 파트3_하우징 부분) / 나머지 스킵 |
 
 ### 아크나이츠(명일방주)
 | 파일명 | 타입 |
@@ -103,6 +106,6 @@
 
 ## 다음 할 일
 
-1. 각 `types/Type_XXX.md` 내용 채우기 (실제 파일 보면서 하나씩)
-2. `Type_무한대.md` — 샘플 합본 보고 작성
-3. Python 코드 작성
+1. Type_무한대.md 최종 보완 — 샘플 합본 파일 받아서 검토
+2. Python 코드 작성 시작
+3. 실제 파일 통합 테스트
